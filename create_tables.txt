@@ -1,0 +1,20 @@
+/*CREATE TABLE 	nbuExchange(
+	r030 BIGSERIAL PRIMARY KEY,
+	txt VARCHAR(50) NOT NULL,
+	rate BIGINT NOT NULL,
+	cc VARCHAR(3) NOT NULL,
+	exchangeDate TIMESTAMP NOT NULL);
+
+/*CREATE TABLE 	privatExchange(
+	ccy BIGSERIAL PRIMARY KEY,
+	base_ccy VARCHAR(3) NOT NULL,
+	buy BIGINT NOT NULL,
+	sale BIGINT NOT NULL);
+
+/*CREATE TABLE history (
+	id BIGSERIAL PRIMARY KEY,
+	amount DECIMAL NOT NULL,
+	rate BIGINT NOT NULL,
+	operationtype VARCHAR(3) CHECK(operationtype IN ('BUY','SELL')),
+	date TIMESTAMP NOT NULL,
+	status BOOLEAN NOT NULL);
